@@ -13,4 +13,19 @@ $(function () {
             $(this).children().eq(1).text(textPull);
         }
     });
+    //setting class values based on current hour
+    $(".time-block").each(function () {
+        var hour = dayjs().format("HH");
+        var unitID = parseInt($(this).attr("id"));
+        if (unitID == hour) {
+            $(this).removeClass("past future").addClass("present");
+        } else if (unitID < hour) {
+            $(this).removeClass("future present").addClass("past");
+        } else {
+            $(this).removeClass("present past").addClass("future");
+        }
+    });
+    // set date on top of page
+    var todayDate = dayjs().format("dddd, MMM DD, YYYY");
+    $("#currentDay").text(todayDate);
 });
