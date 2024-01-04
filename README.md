@@ -50,7 +50,7 @@ https://github.com/wtdunlap/wk5-weekly-challenge-timekeeper
 
 ### Provided Demo GIF
 
-![provided demo](assets/images/05-third-party-apis-homework-demo.gif)
+![provided demo](./assets/images/05-third-party-apis-homework-demo.gif)
 
 ### Sources
 
